@@ -1,0 +1,41 @@
+.current-weather {
+    text-align: center;
+    /* background-color: #C6C6C6; */
+    /* background: url('../styles/img.jpg') repeat-x; */
+    animation: movingClouds 60s linear infinite;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .current-weather h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .current-weather img {
+    width: 100px;
+    height: 100px;
+    animation: moveImage 4s ease-in-out infinite;
+  }
+  
+  .current-weather p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Keyframes for the moveImage animation */
+  @keyframes moveImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,18 @@
+.unit-toggle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.unit-toggle button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.unit-toggle button:hover {
+    background-color: #004d40;
+}

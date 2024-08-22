@@ -1,0 +1,73 @@
+.forecast {
+    margin-top: 30px;
+}
+
+.forecast h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    /* Center align the heading */
+}
+
+.forecast-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adds space between cards */
+    align-items: center;
+}
+
+.forecast-card {
+    width: 18%;
+    background-color: #73ACB1;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds shadow for depth */
+    position: relative;
+    /* Ensures that the image animation is contained within the card */
+}
+
+.forecast-card img {
+    width: 50px;
+    height: 50px;
+    animation: moveImage 3s ease-in-out infinite;
+    /* Applies the animation */
+}
+
+.forecast-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Keyframes for the moveImage animation */
+@keyframes moveImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Optional: Responsive design */
+@media (max-width: 768px) {
+    .forecast-card {
+        width: 45%;
+        /* Adjusts card width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .forecast-card {
+        width: 90%;
+        /* Adjusts card width on very small screens */
+    }
+}

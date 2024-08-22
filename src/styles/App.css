@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom, #e0f7fa, #b2ebf2); Default gradient background */
+    transition: background 0.5s ease-in-out; /* Smooth transition for background change */
+    background: url('../styles/sunny.jpg') repeat-x;
+    animation: movingClouds 60s linear infinite;
+}
+
+.app {
+    width: 90%;
+    max-width: 600px;
+    /* background-color: #ffffff; */
+    background: url('../styles/sunny.jpg') repeat-x;
+    animation: movingClouds 60s linear infinite;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Position relative to contain the animated background */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Add animations for different weather conditions */
+.weather-sunny {
+    background: linear-gradient(to bottom, #ffeb3b, #fdd835); /* Sunny gradient */
+}
+
+.weather-cloudy {
+    background: linear-gradient(to bottom, #cfd8dc, #90a4ae); /* Cloudy gradient */
+}
+
+.weather-rainy {
+    background: linear-gradient(to bottom, #64b5f6, #1976d2); /* Rainy gradient */
+}
+
+.weather-snowy {
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0); /* Snowy gradient */
+}
+
+.weather-windy {
+    background: linear-gradient(to bottom, #a5d6a7, #66bb6a); /* Windy gradient */
+}
+
+/* Optional: Add animated background for dynamic weather effects */
+@keyframes movingClouds {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* .weather-cloudy-animated {
+    background: url('../styles/img.jpg') repeat-x;
+    animation: movingClouds 60s linear infinite;
+} */
