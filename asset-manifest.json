@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Task3_Weather_Forecast/static/css/main.6f94296a.css",
+    "main.js": "/Task3_Weather_Forecast/static/js/main.d2b06e2f.js",
+    "static/media/sunny.jpg": "/Task3_Weather_Forecast/static/media/sunny.bd3db3a2e8940a99a2ba.jpg",
+    "index.html": "/Task3_Weather_Forecast/index.html",
+    "main.6f94296a.css.map": "/Task3_Weather_Forecast/static/css/main.6f94296a.css.map",
+    "main.d2b06e2f.js.map": "/Task3_Weather_Forecast/static/js/main.d2b06e2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f94296a.css",
+    "static/js/main.d2b06e2f.js"
+  ]
+}
